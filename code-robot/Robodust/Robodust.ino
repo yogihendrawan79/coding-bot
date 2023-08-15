@@ -12,6 +12,7 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   Serial.begin(9600);
+  myservo.write(2);
 }
 
 void loop() {
@@ -28,8 +29,15 @@ void loop() {
   if (distance < 10 && previousDistance >= 10) {
     myservo.write(75);
     delay(3000);
-    myservo.write(0);
+    myservo.write(2);
+    delay(3000);
   }
+
+  //  if (distance > 10 && previousDistance <= 10) {
+  //    myservo.write(0);
+  //    delay(3000);
+  //    myservo.write(75);
+  //  }
 
   previousDistance = distance;
 

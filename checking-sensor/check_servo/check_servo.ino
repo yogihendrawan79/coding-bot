@@ -16,7 +16,7 @@ void loop()
     delay(5); // menunggu 15 milidetik
   }
 
-  for (pos = 90; pos >= 1; pos -= 1) // perulangan untuk posisi 180 sampai 0 derajat
+  for (pos = 180; pos >= 1; pos -= 1) // perulangan untuk posisi 180 sampai 0 derajat
   {
     myservo.write(pos); // memerintahkan servo ke posisi derajat sesuai nilai variabel pos
     delay(5); // menunggu 15 milidetik
