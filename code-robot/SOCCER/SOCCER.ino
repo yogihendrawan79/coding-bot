@@ -3,9 +3,7 @@
 //  Robot digerakan dengan 2 motor gearbox
 //  Dikendalikan dengan controller wireless stick ps 2
 //  Mengunakan solenoid untuk menendang bola
-//  Robot soccer ini bisa anda dapatkan di https://www.tokopedia.com/microbot/robot-soccer-sepak-bola-fullset
-//  Tutorial video kunjunggi https://www.youtube.com/channel/UCOuf1e65QKcjS3SfBWlsS4Q?view_as=subscriber
-//  Progam ini di buat oleh Misbah najh (SEKOLAH ROBOT)
+//  Progam ini di buat oleh Misbah najh (SEKOLAH ROBOT) dan di Modifikasi oleh Robonesia.id
 //
 //==========================================================================================
 
