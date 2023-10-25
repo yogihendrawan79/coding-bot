@@ -41,8 +41,8 @@ void setup() {
   error = ps2x.config_gamepad(PS2_CLK, PS2_CMD, PS2_SEL, PS2_DAT, pressures, rumble);
 
   if (error == 0) {
-    Serial.print("controller ditemukan , konfigurasi robot soccer berhasil");
-    Serial.print("Tekan tombol untuk memulai = ");
+    Serial.println("controller ditemukan , konfigurasi robot soccer berhasil");
+    Serial.println("Tekan tombol untuk memulai = ");
     if (pressures)
       Serial.println("true ");
     else
@@ -70,16 +70,16 @@ void setup() {
   type = ps2x.readType();
   switch (type) {
     case 0:
-      Serial.print("Jenis Kontroler tidak dikenal ditemukan");
+      Serial.println("Jenis Kontroler tidak dikenal ditemukan");
       break;
     case 1:
-      Serial.print("DualShock Controller ditemukan");
+      Serial.println("DualShock Controller ditemukan");
       break;
     case 2:
-      Serial.print("GuitarHero Controller ditemukan");
+      Serial.println("GuitarHero Controller ditemukan");
       break;
     case 3:
-      Serial.print("Wireless Sony DualShock Controller ditemukan");
+      Serial.println("Wireless Sony DualShock Controller ditemukan");
       break;
   }
   //////////////konfigurasi keluaran pin//////////
