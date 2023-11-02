@@ -1,0 +1,8 @@
+1. Sebelum membuka progam soccer robot pastikan sudah 
+menambahkan library motor_shield & psx-lib pada Arduino.ide
+2. Copy dan pastekan folder Adafruit-Motor & PSX-lib 
+pada C:\Users\name pc\Documents\Arduino\libraries 
+3. Buka Arduino.ide dan buka file soccer_robot.ino 
+4. Selesai
+
+"TERIMA KASIH"
