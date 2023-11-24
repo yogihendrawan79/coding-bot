@@ -3,7 +3,7 @@
 #include <AFMotor.h>
 
 //initial motors pin
-AF_DCMotor motor1(1, MOTOR12_1KHZ);
+AF_DCMotor motor1(3, MOTOR12_1KHZ);
 AF_DCMotor motor2(2, MOTOR12_1KHZ);
 
 //initial bluetooth
@@ -24,16 +24,16 @@ void loop() {
     Stop();
 
     switch (command) {
-      case 'W':
+      case 'F':
         forward();
         break;
-      case 'S':
+      case 'B':
         back();
         break;
-      case 'A':
+      case 'L':
         left();
         break;
-      case 'D':
+      case 'R':
         right();
         break;
     }
