@@ -2,7 +2,7 @@
 //Robonesia - Latih Hobi
 //Kampung Padi (Dago Pojok) B11
 
-const int relay = 13;
+const int relay = 8;
 const int sensor = 2;
 boolean relayAktif = false;
 int keadaansebelumnya = LOW;
