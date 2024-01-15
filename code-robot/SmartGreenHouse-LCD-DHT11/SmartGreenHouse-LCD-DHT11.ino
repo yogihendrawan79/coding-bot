@@ -2,9 +2,9 @@
 LiquidCrystal_PCF8574 lcd(0x27);
 
 #include "DHT.h"       //library sensor yang telah diimportkan
-#define DHTPIN 2       //Pin apa yang digunakan
+#define DHTPIN 3       //Pin apa yang digunakan
 #define DHTTYPE DHT11  // DHT 11
-float Fan = 3;
+float Fan = 2;
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
@@ -38,8 +38,7 @@ void loop() {
     digitalWrite(Fan, LOW);
   }
   //pembacaan nilai pembacaan data kelembaban
-  lcd
-  .setCursor(0, 0);
+  lcd.setCursor(0, 0);
   lcd.print("Kelembaban: ");
   lcd.print(humidity_1);
   lcd.print(" %\t");
