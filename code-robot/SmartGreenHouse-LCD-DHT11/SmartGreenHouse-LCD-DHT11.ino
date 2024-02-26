@@ -26,10 +26,11 @@ void loop() {
 
   //mengecek pembacaan apakah terjadi kegagalan atau tidak
   if (isnan(humidity_1) || isnan(celcius_1)) {
+    digitalWrite(Fan, HIGH);
     lcd.println("Pembacaan data dari module sensor gagal!");
     return;
   }
-  if (celcius_1 > 28)
+  if (celcius_1 >= 28)
   {
     digitalWrite(Fan, HIGH);
   }
