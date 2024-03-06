@@ -4,7 +4,7 @@ const int pinSensorKiri = A0;
 const int pinSensorKanan = A1;
 
 char val;
-AF_DCMotor motor1(4, MOTOR12_64KHZ); //Jadikan motor kanan, 64KHZ
+AF_DCMotor motor1(2, MOTOR12_64KHZ); //Jadikan motor kanan, 64KHZ
 AF_DCMotor motor2(3, MOTOR12_64KHZ); //Jadikan motor kiri, 642hHZ
 
 void setup() {
