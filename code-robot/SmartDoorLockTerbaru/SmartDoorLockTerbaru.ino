@@ -27,7 +27,7 @@ Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS
 void setup() 
   {
   myservo.attach(10);
-  myservo.write(0);
+  myservo.write(90);
   pinMode(led, OUTPUT);
   pinMode(buzzer, OUTPUT);
   pinMode(10, OUTPUT);
@@ -69,7 +69,7 @@ void loop()
     if(!(strncmp(password, pass,4)))
     {
       digitalWrite(led, HIGH);
-      myservo.write(90);
+      myservo.write(0);
       beep();
       lcd.clear();
       lcd.print("Pass Diterima");
@@ -81,7 +81,7 @@ void loop()
       lcd.print("Masukan Password:");
       lcd.setCursor(0,1);
       i=0;
-      myservo.write(0);
+      myservo.write(90);
       digitalWrite(led, LOW);
     }
     
