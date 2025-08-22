@@ -1,6 +1,5 @@
 //Codingan Arduino - Smart Lamp (Clapping Lamp)
 //Robonesia - Latih Hobi
-//Kampung Padi (Dago Pojok) B11
 
 const int relay = 8;
 const int sensor = 2;
